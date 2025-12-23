@@ -61,7 +61,7 @@ style=alphabetic,
 	
 	\fontsize{12pt}{0pt}
 	\begin{center}
-		\textbf{TITOLO}
+		\textbf{SYMMETRIC CHAIN DESCRIPTION OF THE HILBERT SERIES ASSOCIATE TO A CHOW RING OF A MATROIDS}
 	\end{center}
 	
 	\tableofcontents
@@ -323,10 +323,6 @@ style=alphabetic,
     \[ t ^{\min(\gamma)} + \dots + t^{\min(\gamma) + \ell(\gamma) -1} = t^{\min(\gamma)} 
     \left ( 1 + t + \dots + t^{\ell(\gamma) -1} \right).\]
 
-    \begin{ex}
-        AGGIUNGERE ESEMPIO (é sul foglio)
-    \end{ex}
-    
     Define the polynomial 
     \[ q(t) := \sum_{\gamma \in SC} t^{\min(\gamma)} \left ( 1 + t + \dots + t^{\ell(\gamma) -1} \right).\]
     
@@ -394,37 +390,6 @@ style=alphabetic,
     So we are counting only the chains in $SC$ with a given minimum. If a chain $\gamma \in SC$ is such that $\min(\gamma) = k$, then it contributes to the polynomial with $u^k$, so
     \[ p(0,u) = \sum_{k \ge 0} M(k)u^k, \]
     where $M(k) = \{\gamma \in SC : \min(\gamma) = k\}$.
-
-    \subsection{Coefficients of $p(t,u)$}
-    The last thing to do is to understand what are the coefficients of $p(t,u)$.
-    Consider $\gamma \in SC$, then $\gamma$ contributes to the polynomial with
-    \[ u^{\min(\gamma)} (1+ \dots + t^{\ell(\gamma)-1} ),\]
-    thus a chain $\gamma$ contributes with the coefficients $u^kt^d$ if $\min(\gamma) = k$ and $\ell(\gamma) > d$.
-    Therefore the coefficients of $u^kt^d$ is $|SC(k,d)|$ where
-    \[ SC(k,d) = \{ \gamma \in SC : \min(\gamma) = k, \, \ell(\gamma) >d \}, \]
-    giving
-    \[ p(t,u) = \sum_{\gamma \in SC} |SC(k,d)|u^kt^d.\]
-
-    \subsection{Some properties of SC(k,d)}
-    Fix $k \in \mathbb{N}$, then we have
-    \[ SC(k,0) \supseteq SC(k,1) \supseteq SC(k,2) \supseteq \dots\]
-
-    This holds because if we fix $\min(\gamma) = k$, and we consider $d > f$ then we have
-    \[ \gamma \in SC(k,d) \iff \ell(\gamma) > d \implies \ell(\gamma) > f \iff \gamma \in SC(k,f),\]
-    so
-    \[ f < d \implies SC(k,d) \subseteq SC(k,f).\]
-
-    This sequence of inclusion is not infinite since a chain can't have a length greater than the maximum grade of the Chow ring $r$, so
-    \[ d > r \implies SC(k,d) = \emptyset \, , \, \forall k \in \mathbb{N}.\]
-
-    So in the end $\forall k \in \mathbb{N}$ we have the sequence of inclusion
-    \[ SC(k,0) \supseteq SC(k,1) \supseteq \dots \supseteq SC(k,r-2) \supseteq SC(k,r-1).\]
-
-    We now observe that the length of a chain depends on it's minimum. In fact if $\min(\gamma) = k$, since the chain is symmetric with respect to it's middle element, then the maximum grade of $\gamma$ would be at most $r-k$ and its lenth will be at most $r-2k$. So for every $k \in \mathbb{N}$, we have
-    \[ SC(k,0) \supseteq SC(k,1) \supseteq \dots \supseteq SC(k, r-2k-1).\]
-    
-    Consider now $k=0$. Then, since we have only one chain that contains the element of degree $0$, denote ti by $\bar\gamma$, we have that
-    \[ |SC(0,d)| = 1, \, \forall d <\ell(\bar\gamma).\]
     
     %STAMPA DELLA BIBLIOGRAFIA
 	%\printbibliography[title=References and Bibliography]
