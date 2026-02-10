@@ -63,9 +63,9 @@ We briefly introduce here these chains and the symmetric chain decomposition.
 #### Definition
 Let $(\mathcal{P}, \le)$ a ranked poset with rank function $rk : \mathcal{P} \longrightarrow \mathbb{N}$, we say that the elements $x_1, \dots, x_h \in \mathcal{P}$ form a symmetric chain if :
 
-[1] $x_{i+1} \gtrdot x_{i}$ for all $i < h$;
+$\hspace{1cm} (1) \hspace{0.1cm} x_{i+1} \gtrdot x_{i}$ for all $i < h$;
 
-[2] $rk(x_1)$ + $rk(x_h)$ = $rk(\mathcal{P}).$
+$\hspace{1cm} (2) \hspace{0.1cm} rk(x_1)$ + $rk(x_h)$ = $rk(\mathcal{P}).$
 
 Where $rk(\mathcal{P})$ is the largest rank in $\mathcal{P}$.
 Let $(\mathcal{P}, \le)$ a ranked poset with rank function $rk : \mathcal{P} \longrightarrow \mathbb{N}$, a symmetric chain decomposition of $\mathcal{P}$ is a set of disjoint symmetric chains that cover all the elements of $\mathcal{P}$.
